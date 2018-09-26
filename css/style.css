@@ -40,6 +40,8 @@ input[type="radio"].visually-hidden {
   padding: 16px 54px;
 
   font: inherit;
+  font-weight: 500;
+  line-height: 18px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -212,6 +214,90 @@ a[href].header-logo:active {
   opacity: 0.1;
 }
 /**** КОНЕЦ ГЛАВНОЙ СТРАНИЦЫ ****/
+
+/*** СТРАНИЦА МАГАЗИНА ***/
+.page-title {
+  background-color: #eeeeee;
+}
+
+.page-title h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+}
+
+.filter-form fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-form legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-form ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.price-filter .range {
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+
+.price-filter label {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.price-filter input {
+  box-sizing: border-box;
+  padding: 8px 5px;
+
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 2px;
+}
+
+.price-filter input[value] {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #283136;
+}
+
+.grid-list label,
+.features-list label {
+  line-height: 20px;
+}
+
+.filter-form .button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.filter-form .button:hover,
+.filter-form .button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-form .button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+}
+/*** КОНЕЦ СТРАНИЦЫ МАГАЗИНА***/
 
 /**** ПОДВАЛ ****/
 .contacts-info b {
