@@ -159,6 +159,7 @@ a[href].header-logo:active {
 }
 
 .about-us-text b {
+    font-weight: bold;
     color: #000000;
     text-transform: uppercase;
 }
@@ -201,4 +202,40 @@ a[href].header-logo:active {
 
 .partners a:active {
     opacity: 0.1;
+}
+
+.contacts-info b {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.contacts-info-text,
+.contacts-info-text a {
+    line-height: 18px;
+    color: #666666;
+}
+
+.contacts-info .button {
+    padding: 16px 45px;
+}
+
+.social-links {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.social-links .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 79px;
+    height: 79px;
+    
+    border-radius: 50%;
+    background-color: #e1e1e1;
 }
