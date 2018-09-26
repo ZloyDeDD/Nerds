@@ -57,6 +57,7 @@ input[type="radio"].visually-hidden {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
+/**** ШАПКА ****/
 .main-header {
     background-color: #eeeeee;
 }
@@ -94,7 +95,9 @@ a[href].header-logo:active {
 
     opacity: 0.3;
 }
+/**** КОНЕЦ ШАПКИ ****/
 
+/**** ГЛАВНАЯ СТРАНИЦА ****/
 .slider {
     background-color: #eeeeee;
 }
@@ -173,7 +176,7 @@ a[href].header-logo:active {
 
 .about-us-table caption {
     font-weight: bold;
-    color: #000;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -181,7 +184,7 @@ a[href].header-logo:active {
     font-size: 45px;
     line-height: 45px;
     font-weight: bold;
-    color: #000;
+    color: #000000;
 }
 
 .partners ul {
@@ -203,7 +206,9 @@ a[href].header-logo:active {
 .partners a:active {
     opacity: 0.1;
 }
+/**** КОНЕЦ ГЛАВНОЙ СТРАНИЦЫ ****/
 
+/**** ПОДВАЛ ****/
 .contacts-info b {
     font-size: 18px;
     line-height: 30px;
@@ -221,14 +226,14 @@ a[href].header-logo:active {
     padding: 16px 45px;
 }
 
-.social-links {
+.social ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.social-links .social-button {
+.social-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,3 +244,29 @@ a[href].header-logo:active {
     border-radius: 50%;
     background-color: #e1e1e1;
 }
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #e74246;
+}
+
+.social-button:active {
+    background-color: #d7373b;
+}
+
+.social-button:active svg {
+    opacity: 0.3;
+}
+
+.social-text b {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.social-text p {
+    line-height: 22px;
+    color: #444444;
+}
+/**** КОНЕЦ ПОДВАЛА ****/
