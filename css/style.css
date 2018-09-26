@@ -270,3 +270,28 @@ a[href].header-logo:active {
     color: #444444;
 }
 /**** КОНЕЦ ПОДВАЛА ****/
+
+/**** МОДАЛЬНОЕ ОКНО ****/
+.modal-contacts {
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-contacts h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.contacts-form label {
+    line-height: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.contacts-form input {
+    box-sizing: border-box;
+
+    padding: 
+}
+/**** КОНЕЦ МОДАЛЬНОГО ОКНА ****/
