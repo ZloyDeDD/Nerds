@@ -118,4 +118,54 @@ a[href].header-logo:active {
     line-height: 30px;
     font-weight: bold;
     color: #000000;
+    text-transform: uppercase;
+}
+
+.services-item .button {
+    padding: 16px 40px;
+}
+
+.services-item:nth-child(2) .button {
+    background-color: #00ca74;
+}
+
+.services-item:nth-child(2) .button:hover,
+.services-item:nth-child(2) .button:focus {
+    background-color: #00bc6c;
+}
+
+.services-item:nth-child(2) .button:active {
+    background-color: #00aa62;
+}
+
+.services-item:nth-child(3) .button {
+    background-color: #efc84a;
+}
+
+.services-item:nth-child(3) .button:hover,
+.services-item:nth-child(3) .button:focus {
+    background-color: #eab534;
+}
+
+.services-item:nth-child(3) .button:active {
+    background-color: #e5a722;
+}
+
+.about-us-text .title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.about-us-text b {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.about-us-text ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
