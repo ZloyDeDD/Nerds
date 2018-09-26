@@ -34,7 +34,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-    padding: 10px 30px;
+    padding: 16px 54px;
     font: inherit;
     text-align: center;
     color: #ffffff;
@@ -103,5 +103,19 @@ a[href].header-logo:active {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+    color: #000000;
+}
+
+.services ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
     color: #000000;
 }
