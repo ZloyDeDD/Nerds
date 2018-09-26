@@ -1,297 +1,299 @@
 body {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Roboto", Arial, sans-serif;
-    font-weight: normal;
-    color: #283136;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #283136;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .button {
-    padding: 16px 54px;
-    font: inherit;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #fb565a;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
+  padding: 16px 54px;
+
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-    background-color: #e74246;
+  background-color: #e74246;
 }
 
 .button:active {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
-    background-color: #d7373b;
-    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 /**** ШАПКА ****/
 .main-header {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 a[href].header-logo:hover,
 a[href].header-logo:focus {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 a[href].header-logo:active {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .site-navigation {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 .site-navigation a {
-    line-height: 30px;
-    font-weight: 500;
-    color: #000000;
-    text-transform: uppercase;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-    color: #fb565a;
+  color: #fb565a;
 }
 
 .site-navigation a:active {
-    color: #000000;
+  color: #000000;
 
-    opacity: 0.3;
+  opacity: 0.3;
 }
 /**** КОНЕЦ ШАПКИ ****/
 
 /**** ГЛАВНАЯ СТРАНИЦА ****/
 .slider {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .slider-item h2 {
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 500;
-    color: #000000;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
 }
 
 .services ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 .services-item h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .services-item .button {
-    padding: 16px 40px;
+  padding: 16px 40px;
 }
 
 .services-item:nth-child(2) .button {
-    background-color: #00ca74;
+  background-color: #00ca74;
 }
 
 .services-item:nth-child(2) .button:hover,
 .services-item:nth-child(2) .button:focus {
-    background-color: #00bc6c;
+  background-color: #00bc6c;
 }
 
 .services-item:nth-child(2) .button:active {
-    background-color: #00aa62;
+  background-color: #00aa62;
 }
 
 .services-item:nth-child(3) .button {
-    background-color: #efc84a;
+  background-color: #efc84a;
 }
 
 .services-item:nth-child(3) .button:hover,
 .services-item:nth-child(3) .button:focus {
-    background-color: #eab534;
+  background-color: #eab534;
 }
 
 .services-item:nth-child(3) .button:active {
-    background-color: #e5a722;
+  background-color: #e5a722;
 }
 
 .about-us-text .title {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 500;
-    color: #000000;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
 }
 
 .about-us-text b {
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .about-us-text ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 .about-us-table caption {
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .about-us-table tr:first-child {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: bold;
-    color: #000000;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
 }
 
 .partners ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 .partners a {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .partners a:hover,
 .partners a:focus {
-    opacity: 1;
+  opacity: 1;
 }
 
 .partners a:active {
-    opacity: 0.1;
+  opacity: 0.1;
 }
 /**** КОНЕЦ ГЛАВНОЙ СТРАНИЦЫ ****/
 
 /**** ПОДВАЛ ****/
 .contacts-info b {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
-    color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .contacts-info-text,
 .contacts-info-text a {
-    line-height: 18px;
-    color: #666666;
+  line-height: 18px;
+  color: #666666;
 }
 
 .contacts-info .button {
-    padding: 16px 45px;
+  padding: 16px 45px;
 }
 
 .social ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 .social-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 79px;
+  height: 79px;
 
-    width: 79px;
-    height: 79px;
-    
-    border-radius: 50%;
-    background-color: #e1e1e1;
+  background-color: #e1e1e1;
+  border-radius: 50%;
 }
 
 .social-button:hover,
 .social-button:focus {
-    background-color: #e74246;
+  background-color: #e74246;
 }
 
 .social-button:active {
-    background-color: #d7373b;
+  background-color: #d7373b;
 }
 
 .social-button:active svg {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .social-text b {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: bold;
-    color: #000000;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
 }
 
 .social-text p {
-    line-height: 22px;
-    color: #444444;
+  line-height: 22px;
+  color: #444444;
 }
 /**** КОНЕЦ ПОДВАЛА ****/
 
 /**** МОДАЛЬНОЕ ОКНО ****/
 .modal-contacts {
-    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .modal-contacts h2 {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 500;
-    color: #000000;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
 }
 
 .contacts-form label {
-    line-height: 18px;
-    font-weight: bold;
-    color: #000000;
+  font-weight: bold;
+  line-height: 18px;
+  color: #000000;
 }
 
 .contacts-form input {
-    box-sizing: border-box;
-
-    padding: 
+  box-sizing: border-box;
 }
 /**** КОНЕЦ МОДАЛЬНОГО ОКНА ****/
