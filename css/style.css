@@ -293,7 +293,42 @@ a[href].header-logo:active {
   color: #000000;
 }
 
-.contacts-form input {
+.contacts-form input,
+.contacts-form textarea {
   box-sizing: border-box;
+  padding: 14px;
+
+  line-height: 18px;
+
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.contacts-form input::placeholder,
+.contacts-form textarea::placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.contacts-form input:hover,
+.contacts-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.contacts-form input:focus,
+.contacts-form textarea:focus {
+  border-color: #000000;
+}
+
+.contacts-form input:focus::placeholder,
+.contacts-form textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.contacts-form input:invalid {
+  color: #e74246;
+
+  border-color: #e74246;
 }
 /**** КОНЕЦ МОДАЛЬНОГО ОКНА ****/
