@@ -297,6 +297,108 @@ a[href].header-logo:active {
 
   background-color: #d5d5d5;
 }
+
+.catalog-sorting b {
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+
+.catalog-sorting ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.type-sorting-list a,
+.type-sorting-list .type-current {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.type-sorting-list a:hover,
+.type-sorting-list a:focus {
+  opacity: 0.6;
+}
+
+.type-sorting-list a:active,
+.type-sorting-list .type-current {
+  opacity: 1;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-item-description {
+  background-color: #eeeeee;
+}
+
+.catalog-item-description h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item-description p {
+  line-height: 18px;
+  color: #666666;
+  text-align: center;
+}
+
+.catalog-item-description .button {
+  padding: 16px 62px;
+}
+
+.catalog-item-description .button:active {
+  color: #ffffff;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination-list a,
+.pagination-list .pagination-item-current {
+  line-height: 18;
+  text-align: center;
+  color: #000000;
+  border-radius: 2px;
+}
+
+.pagination-list .pagination-item-current {
+  border: 3px solid #dbdbdb;
+}
+
+.pagination-list a {
+  background-color: #eeeeee;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
 /*** КОНЕЦ СТРАНИЦЫ МАГАЗИНА***/
 
 /**** ПОДВАЛ ****/
