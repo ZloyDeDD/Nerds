@@ -36,6 +36,12 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1160px;
+}
+
 .button {
   padding: 16px 54px;
 
@@ -69,6 +75,23 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 49px;
+}
+
+.main-header .header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.main-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 a[href].header-logo:hover,
 a[href].header-logo:focus {
   opacity: 0.8;
@@ -78,14 +101,17 @@ a[href].header-logo:active {
   opacity: 0.3;
 }
 
-.site-navigation {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+ul.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  padding-top: 25px;
 }
 
-.site-navigation a {
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 0 23px;
   font-weight: 500;
   line-height: 30px;
   color: #000000;
@@ -93,11 +119,14 @@ a[href].header-logo:active {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
   color: #fb565a;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.user-navigation a:active {
   color: #000000;
 
   opacity: 0.3;
