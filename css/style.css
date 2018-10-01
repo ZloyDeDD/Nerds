@@ -185,6 +185,7 @@ ul.user-navigation {
 .services {
   padding-top: 80px;
   padding-bottom: 93px;
+
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -221,6 +222,7 @@ ul.user-navigation {
 
 .services-item p {
   margin-bottom: 46px;
+  padding-right: 20px;
 }
 
 .services-item .button {
@@ -253,11 +255,39 @@ ul.user-navigation {
   background-color: #e5a722;
 }
 
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+  padding-bottom: 49px;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.about-us .col-left {
+  width: 660px;
+  padding-top: 34px;
+}
+
+.about-us .col-right {
+  width: 360px;
+}
+
 .about-us-text .title {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
+  text-transform: none;
+}
+
+.about-us-text p:first-of-type {
+  margin-top: 33px;
+}
+
+.about-us-text p:last-of-type {
+  margin-top: 39px;
+  margin-bottom: 24px;
 }
 
 .about-us-text b {
@@ -266,24 +296,61 @@ ul.user-navigation {
   text-transform: uppercase;
 }
 
-.about-us-text ul {
+.about-us-text .about-us-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.about-us-list li {
+  margin-bottom: 24px;
+  padding-left: 36px;
+}
+
+.about-us-info img {
+  display: block;
+  width: 360px;
+  height: 208px;
+}
+
+.about-us-table {
+  margin-top: 36px;
+}
+
 .about-us-table caption {
+  margin-bottom: 24px;
+
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
 }
 
-.about-us-table tr:first-child {
+.about-us-table thead {
+  display: table-footer-group;
+
+  text-align: left;
+}
+
+.about-us-table th {
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.about-us-table tbody {
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
+}
+
+.about-us-table td {
+  width: 33%;
+  height: 74px;
+}
+
+.about-us-table sup {
+  font-size: 28px;
 }
 
 .partners ul {
