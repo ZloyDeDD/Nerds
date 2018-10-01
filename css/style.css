@@ -43,11 +43,13 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  display: inline-block;
   padding: 16px 54px;
 
   font: inherit;
   font-weight: 500;
   line-height: 18px;
+  vertical-align: middle;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -173,7 +175,7 @@ ul.user-navigation {
 }
 
 .slider-description p {
-  margin-bottom: 53px;
+  margin-bottom: 40px;
 }
 
 .slider-controls {
@@ -183,8 +185,7 @@ ul.user-navigation {
 }
 
 .services {
-  padding-top: 80px;
-  padding-bottom: 93px;
+  padding: 80px 0;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -221,7 +222,7 @@ ul.user-navigation {
 }
 
 .services-item p {
-  margin-bottom: 46px;
+  margin-bottom: 33px;
   padding-right: 20px;
 }
 
@@ -353,24 +354,47 @@ ul.user-navigation {
   font-size: 28px;
 }
 
-.partners ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+.partners {
+  padding-bottom: 81px;
 }
 
-.partners a {
+.partners .partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
+  padding-bottom: 41px;
+
+  list-style: none;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.partners-list .partners-list-item {
+  width: 260px;
+}
+
+.partners-list-item a {
+  display: flex;
+  justify-content: center;
+
   opacity: 0.2;
 }
 
-.partners a:hover,
-.partners a:focus {
+.partners-list-item a:hover,
+.partners-list-item a:focus {
   opacity: 1;
 }
 
-.partners a:active {
+.partners-list-item a:active {
   opacity: 0.1;
+}
+
+.partners-list-item img {
+  width: auto;
 }
 /**** КОНЕЦ ГЛАВНОЙ СТРАНИЦЫ ****/
 
@@ -563,11 +587,29 @@ ul.user-navigation {
 /*** КОНЕЦ СТРАНИЦЫ МАГАЗИНА***/
 
 /**** ПОДВАЛ ****/
+.contacts {
+  position: relative;
+}
+
+.contacts-info {
+  position: absolute;
+  top: 10%;
+
+  width: 220px;
+  padding: 48px 50px 47px 50px;
+
+  background-color: #ffffff;
+}
+
 .contacts-info b {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
+
+.contacts-info-text:first-of-type {
+  padding-top: 8px;
 }
 
 .contacts-info-text,
@@ -577,7 +619,8 @@ ul.user-navigation {
 }
 
 .contacts-info .button {
-  padding: 16px 45px;
+  margin-top: 23px;
+  padding: 16px 44px;
 }
 
 .social ul {
