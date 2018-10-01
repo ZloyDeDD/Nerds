@@ -75,9 +75,10 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
-.main-header .container {
+.main-header .main-navigation {
   display: flex;
   padding-top: 49px;
+  padding-bottom: 32px;
 }
 
 .main-header .header-logo {
@@ -153,14 +154,31 @@ ul.user-navigation {
 
 /**** ГЛАВНАЯ СТРАНИЦА ****/
 .slider {
-  background-color: #eeeeee;
+  position: relative;
+  min-height: 353px;
 }
 
-.slider-item h2 {
+.slider-description {
+  width: 560px;
+}
+
+.slider-description h2 {
+  margin-bottom: 26px;
+
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
+}
+
+.slider-description p {
+  margin-bottom: 53px;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 42%;
+  bottom: 26%;
 }
 
 .services ul {
