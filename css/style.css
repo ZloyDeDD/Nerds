@@ -283,7 +283,7 @@ ul.user-navigation {
 }
 
 .about-us-text p:first-of-type {
-  margin-top: 33px;
+  margin-top: 37px;
 }
 
 .about-us-text p:last-of-type {
@@ -320,7 +320,7 @@ ul.user-navigation {
 }
 
 .about-us-table caption {
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 
   font-weight: bold;
   color: #000000;
@@ -366,7 +366,7 @@ ul.user-navigation {
   margin: 0;
   padding: 0;
   padding-top: 48px;
-  padding-bottom: 41px;
+  padding-bottom: 44px;
 
   list-style: none;
 
@@ -609,7 +609,7 @@ ul.user-navigation {
 }
 
 .contacts-info-text:first-of-type {
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .contacts-info-text,
