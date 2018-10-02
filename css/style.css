@@ -156,27 +156,32 @@ ul.user-navigation {
 /**** ГЛАВНАЯ СТРАНИЦА ****/
 .slider {
   position: relative;
+
   min-height: 433px;
 }
 
 .slider .slider-item {
-  width: 100%;
   position: absolute;
+
+  width: 100%;
+  padding-bottom: 100px;
+
   background-repeat: no-repeat;
   background-position: 93%;
-  padding-bottom: 100px;
 }
 
-.slider .slider-item:first-child {
-  background-image: url(../img/slide1.png);
+.slider .slider-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
 }
 
 .slider .slider-item:nth-child(2) {
-  background-image: url(../img/slide2.png);
+  padding-bottom: 82px;
+
+  background-image: url("../img/slide2.png");
 }
 
-.slider .slider-item:last-child {
-  background-image: url(../img/slide3.png);
+.slider .slider-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
 }
 
 .slider-description {
@@ -186,6 +191,7 @@ ul.user-navigation {
 .slider-description h2 {
   margin: 0;
   padding-top: 77px;
+  padding-right: 60px;
   padding-bottom: 12px;
 
   font-weight: 500;
@@ -196,6 +202,7 @@ ul.user-navigation {
 
 .slider-description p {
   margin-bottom: 40px;
+  padding-right: 60px;
 }
 
 .slider-controls {
@@ -609,11 +616,13 @@ ul.user-navigation {
 /**** ПОДВАЛ ****/
 .contacts {
   position: relative;
+
   padding-bottom: 60px;
 }
 
 .contacts img {
   width: auto;
+
   transform: translateX(10%);
 }
 
@@ -672,8 +681,8 @@ ul.user-navigation {
 }
 
 .social .social-text {
-  padding-top: 8px;
   width: 760px;
+  padding-top: 8px;
 }
 
 .social-button {
@@ -709,6 +718,7 @@ ul.user-navigation {
 
 .social-text p {
   margin-top: 9px;
+
   line-height: 22px;
   color: #444444;
 }
@@ -719,11 +729,13 @@ ul.user-navigation {
   position: fixed;
   top: 0;
   left: 50%;
+
+  width: 760px;
   margin-left: -480px;
   padding: 73px 100px 85px 100px;
-  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
-  width: 760px;
+
   background: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .modal-contacts-row {
@@ -754,15 +766,15 @@ ul.user-navigation {
 
 .contacts-form input,
 .contacts-form textarea {
-  margin-top: 13px;
   box-sizing: border-box;
+  width: 100%;
+  margin-top: 13px;
   padding: 14px;
 
   line-height: 18px;
 
   border: 2px solid #d7dcde;
   border-radius: 2px;
-  width: 100%;
 }
 
 .contacts-form input::placeholder,
