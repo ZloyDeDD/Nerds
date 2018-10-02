@@ -162,10 +162,21 @@ ul.user-navigation {
 .slider .slider-item {
   width: 100%;
   position: absolute;
-  background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
   background-position: 93%;
   padding-bottom: 100px;
+}
+
+.slider .slider-item:first-child {
+  background-image: url(../img/slide1.png);
+}
+
+.slider .slider-item:nth-child(2) {
+  background-image: url(../img/slide2.png);
+}
+
+.slider .slider-item:last-child {
+  background-image: url(../img/slide3.png);
 }
 
 .slider-description {
