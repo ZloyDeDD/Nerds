@@ -431,11 +431,25 @@ ul.user-navigation {
 }
 
 .page-title h1 {
+  margin: 0;
+  padding-top: 78px;
+  padding-bottom: 109px;
+
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
   color: #000000;
+}
+
+main.inner-page {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 54px;
+}
+
+.filter {
+  width: 260px;
 }
 
 .filter-form fieldset {
@@ -460,9 +474,24 @@ ul.user-navigation {
   list-style: none;
 }
 
-.price-filter .range {
+fieldset.price-filter {
+  margin-bottom: 38px;
+}
+
+.price-filter legend {
+  padding-bottom: 48px;
+}
+
+.price-filter .range-control {
+  height: 80px;
+
   background-color: #eeeeee;
   border-radius: 2px;
+}
+
+.price-filter .range-display {
+  display: flex;
+  justify-content: space-between;
 }
 
 .price-filter label {
@@ -472,7 +501,7 @@ ul.user-navigation {
 
 .price-filter input {
   box-sizing: border-box;
-  padding: 8px 5px;
+  padding: 7px 0;
 
   background-color: #eeeeee;
   border: none;
@@ -480,20 +509,43 @@ ul.user-navigation {
 }
 
 .price-filter input[value] {
+  width: 80px;
+  margin-left: 8px;
+
   font-size: 16px;
   line-height: 22px;
   text-align: center;
   color: #283136;
 }
 
+fieldset.grid-filter {
+  padding-bottom: 24px;
+}
+
+fieldset.features-filter {
+  padding-bottom: 26px;
+}
+
+.grid-filter li,
+.features-filter li {
+  padding-bottom: 17px;
+  padding-left: 37px;
+}
+
+.grid-filter legend,
+.features-filter legend {
+  padding-bottom: 14px;
+}
+
 .grid-list label,
 .features-list label {
+
   line-height: 20px;
 }
 
 .filter-form .button {
   color: #000000;
-
+  width: 100%;
   background-color: #eeeeee;
 }
 
@@ -506,6 +558,10 @@ ul.user-navigation {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
+}
+
+.catalog {
+  width: 760px;
 }
 
 .catalog-sorting b {

@@ -12,50 +12,49 @@
 <body>
 
   <header class="main-header">
-    <nav class="container">
-      <a class="header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="header-logo" href="index.html">
+          <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="page-title">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <div class="page-title">
-      <h1>Магазин готовых шаблонов</h1>
-    </div>
-
-    <aside>
+  <main class="inner-page container">
+    <aside class="filter">
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
+        <fieldset class="price-filter">
           <legend>Стоимость:</legend>
-          <div class="price-filter">
-            <div class="range">
-              <div class="progress">
-                <div class="current-progress"></div>
-                <button type="button"><span class="visually-hidden">стоимость от</span></button>
-                <button type="button"><span class="visually-hidden">стоимость до</span></button>
-              </div>
+          <div class="range-control">
+            <div class="progress">
+              <div class="current-progress"></div>
+              <button type="button"><span class="visually-hidden">стоимость от</span></button>
+              <button type="button"><span class="visually-hidden">стоимость до</span></button>
             </div>
-            <p>
-              <label>От
-                <input type="text" name="min-price" value="0">
-              </label>
-              <label>До
-                <input type="text" name="max-price" value="15000">
-              </label>
-            </p>
           </div>
+          <p class="range-display">
+            <label>От
+              <input type="text" name="min-price" value="0">
+            </label>
+            <label>До
+              <input type="text" name="max-price" value="15000">
+            </label>
+          </p>
         </fieldset>
-        <fieldset>
+        <fieldset class="grid-filter">
           <legend>Сетка:</legend>
           <ul class="grid-list">
             <li>
@@ -72,7 +71,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="features-filter">
           <legend>Особенности:</legend>
           <ul class="features-list">
             <li>
@@ -219,20 +218,22 @@
     </section>
   </footer>
 
-  <section class="modal-contacts">
+  <section class="modal-contacts visually-hidden">
     <h2>Напишите нам</h2>
     <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" type="text" name="email" placeholder="email@example.com">
-      </p>
+      <div class="modal-contacts-row">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="text" name="email" placeholder="email@example.com">
+        </p>
+      </div>
       <p>
         <label for="message">Текст письма:</label>
-        <textarea id="message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
