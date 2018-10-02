@@ -589,11 +589,17 @@ ul.user-navigation {
 /**** ПОДВАЛ ****/
 .contacts {
   position: relative;
+  padding-bottom: 60px;
+}
+
+.contacts img {
+  width: auto;
+  transform: translateX(10%);
 }
 
 .contacts-info {
   position: absolute;
-  top: 10%;
+  top: 52px;
 
   width: 220px;
   padding: 48px 50px 47px 50px;
@@ -623,11 +629,31 @@ ul.user-navigation {
   padding: 16px 44px;
 }
 
-.social ul {
+.social {
+  padding-bottom: 70px;
+}
+
+.social .container {
+  display: flex;
+}
+
+.social .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.social-list li {
+  margin-right: 12px;
+}
+
+.social .social-text {
+  padding-top: 8px;
+  width: 760px;
 }
 
 .social-button {
@@ -662,6 +688,7 @@ ul.user-navigation {
 }
 
 .social-text p {
+  margin-top: 9px;
   line-height: 22px;
   color: #444444;
 }
@@ -669,7 +696,23 @@ ul.user-navigation {
 
 /**** МОДАЛЬНОЕ ОКНО ****/
 .modal-contacts {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  padding: 73px 100px 85px 100px;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  width: 760px;
+  background: #ffffff;
+}
+
+.modal-contacts-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-contacts-row p {
+  width: 360px;
 }
 
 .modal-contacts h2 {
@@ -677,6 +720,10 @@ ul.user-navigation {
   font-size: 45px;
   line-height: 45px;
   color: #000000;
+}
+
+.contacts-form {
+  position: relative;
 }
 
 .contacts-form label {
@@ -687,6 +734,7 @@ ul.user-navigation {
 
 .contacts-form input,
 .contacts-form textarea {
+  margin-top: 13px;
   box-sizing: border-box;
   padding: 14px;
 
@@ -694,6 +742,7 @@ ul.user-navigation {
 
   border: 2px solid #d7dcde;
   border-radius: 2px;
+  width: 100%;
 }
 
 .contacts-form input::placeholder,
@@ -722,5 +771,16 @@ ul.user-navigation {
   color: #e74246;
 
   border-color: #e74246;
+}
+
+.contacts-form textarea {
+  min-height: 115px;
+  margin-bottom: 50px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20%;
+  left: 90%;
 }
 /**** КОНЕЦ МОДАЛЬНОГО ОКНА ****/
