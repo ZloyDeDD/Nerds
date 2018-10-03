@@ -143,7 +143,7 @@ ul.user-navigation {
   position: absolute;
   left: 23px;
   right: 23px;
-  bottom: 0;
+  bottom: 4px;
   height: 2px;
   background-color: #fb565a;
 }
@@ -634,8 +634,20 @@ fieldset.features-filter {
 
 .grid-filter li,
 .features-filter li {
-  padding-bottom: 17px;
+  position: relative;
+  padding-bottom: 21px;
   padding-left: 37px;
+  cursor: pointer;
+}
+
+.grid-filter li:hover,
+.features-filter li:hover {
+  color:#000000;
+}
+
+.grid-filter input:disabled,
+.features-filter input:disabled {
+  opacity: 0.1;
 }
 
 .grid-filter legend,
@@ -645,7 +657,46 @@ fieldset.features-filter {
 
 .grid-list label,
 .features-list label {
+  display: block;
   line-height: 20px;
+  cursor: pointer;
+}
+
+.filter-input-checkbox:not(:disabled):hover+label::before,
+.filter-input-checkbox:not(:disabled):hover+label::after, 
+.filter-input-checkbox:not(:disabled):focus+label::before,
+.filter-input-checkbox:not(:disabled):focus+label::after {
+  opacity: 1;
+}
+
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked+label::before {
+  display: none;
+}
+
+.filter-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:disabled+label {
+  opacity: 0.3;
 }
 
 .filter-form .button {
