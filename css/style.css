@@ -141,10 +141,12 @@ ul.user-navigation {
 .user-navigation a.current::after {
   content: "";
   position: absolute;
-  left: 23px;
   right: 23px;
   bottom: 4px;
+  left: 23px;
+
   height: 2px;
+
   background-color: #fb565a;
 }
 
@@ -166,16 +168,19 @@ ul.user-navigation {
 
 .user-navigation a {
   position: relative;
+
   padding-left: 40px;
 }
 
 .user-navigation a::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 7px;
+  left: 0;
+
   width: 15px;
   height: 15px;
+
   background-image: url("../img/cart-icon.svg");
 }
 
@@ -240,11 +245,12 @@ ul.user-navigation {
 }
 
 .slider-controls button {
-  margin-right: 14px;
-  border: none;
-  background-color: #ffffff;
   width: 18px;
   height: 18px;
+  margin-right: 14px;
+
+  background-color: #ffffff;
+  border: none;
   border-radius: 50%;
 }
 
@@ -253,10 +259,12 @@ ul.user-navigation {
   position: absolute;
   top: 5px;
   left: 5px;
+
   width: 4px;
   height: 4px;
-  border-radius: 50%;
+
   border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .services {
@@ -381,6 +389,7 @@ ul.user-navigation {
 
 .about-us-list li {
   position: relative;
+
   margin-bottom: 24px;
   padding-left: 36px;
 }
@@ -388,10 +397,12 @@ ul.user-navigation {
 .about-us-list li::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 10px;
+  left: 0;
+
   width: 25px;
   height: 2px;
+
   background-color: #fb565a;
 }
 
@@ -544,8 +555,8 @@ fieldset.price-filter {
 
 .price-filter .range-control {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 80px;
 
   background-color: #eeeeee;
@@ -555,13 +566,16 @@ fieldset.price-filter {
 .range-control .progress {
   width: 219px;
   height: 2px;
+
   background-color: #d7dcde;
 }
 
 .range-control .current-progress {
   position: relative;
+
   width: 150px;
   height: 2px;
+
   background-color: #00ca74;
 }
 
@@ -576,10 +590,12 @@ fieldset.price-filter {
 
 .progress button {
   position: relative;
-  border: none;
-  background-color: #ffffff;
+
   width: 20px;
   height: 20px;
+
+  background-color: #ffffff;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -589,10 +605,12 @@ fieldset.price-filter {
   position: absolute;
   top: 8px;
   left: 8px;
+
   width: 4px;
   height: 4px;
-  border-radius: 50%;
+
   background-color: #ababab;
+  border-radius: 50%;
 }
 
 .price-filter .range-display {
@@ -635,14 +653,16 @@ fieldset.features-filter {
 .grid-filter li,
 .features-filter li {
   position: relative;
+
   padding-bottom: 21px;
   padding-left: 37px;
+
   cursor: pointer;
 }
 
 .grid-filter li:hover,
 .features-filter li:hover {
-  color:#000000;
+  color: #000000;
 }
 
 .grid-filter input:disabled,
@@ -658,45 +678,73 @@ fieldset.features-filter {
 .grid-list label,
 .features-list label {
   display: block;
+
   line-height: 20px;
+
   cursor: pointer;
 }
 
-.filter-input-checkbox:not(:disabled):hover+label::before,
-.filter-input-checkbox:not(:disabled):hover+label::after, 
-.filter-input-checkbox:not(:disabled):focus+label::before,
-.filter-input-checkbox:not(:disabled):focus+label::after {
+.filter-input:not(:disabled):hover + label::before,
+.filter-input:not(:disabled):hover + label::after,
+.filter-input:not(:disabled):focus + label::before,
+.filter-input:not(:disabled):focus + label::after {
   opacity: 1;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input + label::before {
   content: "";
   position: absolute;
-  left: 0;
   top: -3px;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/radio-off.svg");
+  left: 0;
+
+  background-repeat: no-repeat;
   opacity: 0.4;
 }
 
-.filter-input-checkbox:checked+label::before {
+.filter-input:checked + label::before {
   display: none;
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input:checked + label::after {
   content: "";
   position: absolute;
-  left: 0;
   top: -3px;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/radio-on.svg");
+  left: 0;
+
+  background-repeat: no-repeat;
   opacity: 0.4;
 }
 
-.filter-input-checkbox:disabled+label {
+.filter-input:disabled + label {
   opacity: 0.3;
+}
+
+.filter-input-radio + label::before {
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+}
+
+.filter-input-radio:checked + label::after {
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-input-checkbox + label::before {
+  width: 26px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.filter-input-checkbox:checked + label::after {
+  width: 26px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-form .button {
@@ -922,14 +970,18 @@ ul.type-sorting-list {
 .contacts {
   position: relative;
 
+  height: 416px;
   padding-bottom: 60px;
 }
 
 .contacts img {
+  position: absolute;
+  left: 50%;
+
   width: 1440px;
   height: 416px;
 
-  transform: translateX(16%);
+  transform: translateX(-50%);
 }
 
 .contacts-info {
