@@ -380,8 +380,19 @@ ul.user-navigation {
 }
 
 .about-us-list li {
+  position: relative;
   margin-bottom: 24px;
   padding-left: 36px;
+}
+
+.about-us-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .about-us-info img {
@@ -532,10 +543,56 @@ fieldset.price-filter {
 }
 
 .price-filter .range-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80px;
 
   background-color: #eeeeee;
   border-radius: 4px;
+}
+
+.range-control .progress {
+  width: 219px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-control .current-progress {
+  position: relative;
+  width: 150px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.progress-button-wrapper {
+  position: absolute;
+  top: -9px;
+}
+
+.current-progress .progress-button-wrapper:last-child {
+  left: 140px;
+}
+
+.progress button {
+  position: relative;
+  border: none;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.progress button::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ababab;
 }
 
 .price-filter .range-display {
