@@ -235,8 +235,28 @@ ul.user-navigation {
 
 .slider-controls {
   position: absolute;
-  bottom: 26%;
-  left: 42%;
+  bottom: 92px;
+  left: 536px;
+}
+
+.slider-controls button {
+  margin-right: 14px;
+  border: none;
+  background-color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.slider-controls button.current::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 2px solid #c1c1c1;
 }
 
 .services {
