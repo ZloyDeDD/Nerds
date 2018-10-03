@@ -122,6 +122,11 @@ ul.user-navigation {
   text-align: right;
 }
 
+.site-navigation li,
+.user-navigation li {
+  position: relative;
+}
+
 .site-navigation a,
 .user-navigation a {
   display: block;
@@ -132,24 +137,47 @@ ul.user-navigation {
   text-transform: uppercase;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a.current::after,
+.user-navigation a.current::after {
+  content: "";
+  position: absolute;
+  left: 23px;
+  right: 23px;
+  bottom: 0;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus,
+.user-navigation a[href]:hover,
+.user-navigation a[href]:focus {
   color: #fb565a;
 }
 
-.site-navigation a:active,
-.user-navigation a:active {
-  color: #000000;
-
-  opacity: 0.3;
+.site-navigation a[href]:active,
+.user-navigation a[href]:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation a {
   padding: 0 23px;
 }
 
+.user-navigation a {
+  position: relative;
+  padding-left: 40px;
+}
+
+.user-navigation a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+}
 
 /**** КОНЕЦ ШАПКИ ****/
 
