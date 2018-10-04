@@ -1113,7 +1113,7 @@ ul.type-sorting-list {
 
 /**** МОДАЛЬНОЕ ОКНО ****/
 .modal {
-  display: none;
+  /* display: none; */
 }
 
 .modal-show {
@@ -1147,6 +1147,25 @@ ul.type-sorting-list {
   font-size: 45px;
   line-height: 45px;
   color: #000000;
+}
+
+.modal-close {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 18%;
+  right: 9%;
+  width: 27px;
+  height: 27px;
+}
+
+.modal-close::before {
+  display: block;
+  content: "";
+
+  width: 27px;
+  height: 5px;
+  background-color: #fb565a;
 }
 
 .contacts-form {
@@ -1203,11 +1222,5 @@ ul.type-sorting-list {
 .contacts-form textarea {
   min-height: 115px;
   margin-bottom: 50px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 20%;
-  left: 90%;
 }
 /**** КОНЕЦ МОДАЛЬНОГО ОКНА ****/
