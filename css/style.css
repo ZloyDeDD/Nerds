@@ -1040,7 +1040,7 @@ ul.type-sorting-list {
   color: #666666;
 }
 
-.contacts-info .button {
+.contacts-info .write-us {
   margin-top: 23px;
   padding: 16px 44px;
 }
@@ -1112,6 +1112,14 @@ ul.type-sorting-list {
 /**** КОНЕЦ ПОДВАЛА ****/
 
 /**** МОДАЛЬНОЕ ОКНО ****/
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
 .modal-contacts {
   position: fixed;
   top: 0;
