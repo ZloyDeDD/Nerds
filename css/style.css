@@ -1122,12 +1122,12 @@ ul.type-sorting-list {
 
 .modal-contacts {
   position: fixed;
-  top: 0;
+  top: 45px;
   left: 50%;
 
   width: 760px;
   margin-left: -480px;
-  padding: 73px 100px 85px 100px;
+  padding: 30px 100px 85px 100px;
 
   background: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1151,11 +1151,12 @@ ul.type-sorting-list {
 
 .modal-close {
   position: absolute;
-  top: 18%;
-  right: 9%;
+  top: 13%;
+  right: 100px;
 
   width: 27px;
   height: 27px;
+  padding: 0;
 
   background: none;
   border: none;
@@ -1164,11 +1165,25 @@ ul.type-sorting-list {
 .modal-close::before {
   content: "";
 
-  display: block;
+  position: absolute;
+  top: 0;
   width: 27px;
   height: 5px;
 
   background-color: #fb565a;
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  width: 27px;
+  height: 5px;
+
+  background-color: #fb565a;
+  transform: rotate(-45deg);
 }
 
 .contacts-form {
