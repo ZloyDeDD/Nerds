@@ -839,7 +839,7 @@ ul.type-sorting-list {
   display: block;
 
   border-right: 5.5px solid transparent;
-  border-bottom: 10px solid rgba(0,0,0,0.2);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.2);
   border-left: 5.5px solid transparent;
 }
 
@@ -1150,21 +1150,24 @@ ul.type-sorting-list {
 }
 
 .modal-close {
-  border: none;
-  background: none;
   position: absolute;
   top: 18%;
   right: 9%;
+
   width: 27px;
   height: 27px;
+
+  background: none;
+  border: none;
 }
 
 .modal-close::before {
-  display: block;
   content: "";
 
+  display: block;
   width: 27px;
   height: 5px;
+
   background-color: #fb565a;
 }
 
