@@ -1082,6 +1082,7 @@ ul.type-sorting-list {
 
   height: 416px;
   padding-bottom: 67px;
+  overflow: hidden;
 }
 
 .contacts iframe {
