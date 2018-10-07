@@ -642,6 +642,8 @@ fieldset.price-filter {
   line-height: 22px;
   text-align: center;
   color: #283136;
+
+  cursor: pointer;
 }
 
 fieldset.grid-filter {
@@ -1005,9 +1007,16 @@ ul.type-sorting-list {
   padding-bottom: 67px;
 }
 
+.contacts iframe {
+  position: relative;
+  z-index: 2;
+}
+
 .contacts img {
   position: absolute;
+  top: 0;
   left: 50%;
+  z-index: 1;
 
   width: 1440px;
   height: 416px;
@@ -1023,6 +1032,7 @@ ul.type-sorting-list {
   padding: 48px 50px 47px 50px;
 
   background-color: #ffffff;
+  z-index: 2;
 }
 
 .contacts-info b {
