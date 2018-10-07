@@ -1027,12 +1027,12 @@ ul.type-sorting-list {
 .contacts-info {
   position: absolute;
   top: 52px;
+  z-index: 2;
 
   width: 220px;
   padding: 48px 50px 47px 50px;
 
   background-color: #ffffff;
-  z-index: 2;
 }
 
 .contacts-info b {
@@ -1143,6 +1143,7 @@ ul.type-sorting-list {
   position: fixed;
   top: 156px;
   left: 50%;
+  z-index: 3;
 
   width: 760px;
   margin-left: -480px;
