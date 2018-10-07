@@ -1163,8 +1163,8 @@ ul.type-sorting-list {
 
 .modal-close {
   position: absolute;
-  top: 87px;
-  right: 100px;
+  top: 77px;
+  right: 87px;
 
   width: 27px;
   height: 27px;
@@ -1172,12 +1172,23 @@ ul.type-sorting-list {
 
   background: none;
   border: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
 
 .modal-close::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10px;
+  left: 0;
 
   width: 27px;
   height: 5px;
@@ -1189,7 +1200,8 @@ ul.type-sorting-list {
 .modal-close::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10px;
+  left: 0;
 
   width: 27px;
   height: 5px;
