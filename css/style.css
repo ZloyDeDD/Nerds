@@ -234,7 +234,7 @@ ul.user-navigation {
 }
 
 .slider-description p {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-right: 60px;
 }
 
@@ -295,6 +295,8 @@ ul.user-navigation {
 }
 
 .services-item h3 {
+  margin: 0;
+  margin-top: 23px;
   margin-bottom: 17px;
 
   font-weight: bold;
@@ -350,7 +352,7 @@ ul.user-navigation {
 
 .about-us .col-left {
   width: 660px;
-  padding-top: 34px;
+  padding-top: 33px;
 }
 
 .about-us .col-right {
@@ -366,7 +368,7 @@ ul.user-navigation {
 }
 
 .about-us-text p:first-of-type {
-  margin-top: 37px;
+  margin-top: 32px;
 }
 
 .about-us-text p:last-of-type {
@@ -417,7 +419,7 @@ ul.user-navigation {
 }
 
 .about-us-table caption {
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 
   font-weight: bold;
   color: #000000;
@@ -1000,7 +1002,7 @@ ul.type-sorting-list {
   position: relative;
 
   height: 416px;
-  padding-bottom: 60px;
+  padding-bottom: 67px;
 }
 
 .contacts img {
@@ -1031,7 +1033,14 @@ ul.type-sorting-list {
 }
 
 .contacts-info-text:first-of-type {
-  padding-top: 10px;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.contacts-info-text:last-of-type {
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 13px;
 }
 
 .contacts-info-text,
@@ -1113,7 +1122,7 @@ ul.type-sorting-list {
 
 /**** МОДАЛЬНОЕ ОКНО ****/
 .modal {
-  /* display: none; */
+  display: none;
 }
 
 .modal-show {
@@ -1122,12 +1131,12 @@ ul.type-sorting-list {
 
 .modal-contacts {
   position: fixed;
-  top: 45px;
+  top: 156px;
   left: 50%;
 
   width: 760px;
   margin-left: -480px;
-  padding: 30px 100px 85px 100px;
+  padding: 68px 100px 85px 100px;
 
   background: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1143,6 +1152,9 @@ ul.type-sorting-list {
 }
 
 .modal-contacts h2 {
+  margin: 0;
+  margin-bottom: 22px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -1151,7 +1163,7 @@ ul.type-sorting-list {
 
 .modal-close {
   position: absolute;
-  top: 13%;
+  top: 87px;
   right: 100px;
 
   width: 27px;
@@ -1164,9 +1176,9 @@ ul.type-sorting-list {
 
 .modal-close::before {
   content: "";
-
   position: absolute;
   top: 0;
+
   width: 27px;
   height: 5px;
 
@@ -1176,9 +1188,9 @@ ul.type-sorting-list {
 
 .modal-close::after {
   content: "";
-
   position: absolute;
   top: 0;
+
   width: 27px;
   height: 5px;
 
@@ -1200,8 +1212,8 @@ ul.type-sorting-list {
 .contacts-form textarea {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 13px;
-  padding: 14px;
+  margin-top: 6px;
+  padding: 13px;
 
   line-height: 18px;
 
@@ -1238,7 +1250,11 @@ ul.type-sorting-list {
 }
 
 .contacts-form textarea {
-  min-height: 115px;
-  margin-bottom: 50px;
+  min-height: 119px;
+  margin-bottom: 24px;
+}
+
+.contacts-form .button {
+  padding: 16px 84px;
 }
 /**** КОНЕЦ МОДАЛЬНОГО ОКНА ****/
