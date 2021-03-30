@@ -265,17 +265,24 @@ ul.user-navigation {
   border-radius: 50%;
 }
 
+.slider-controls button.current {
+  position: relative;
+}
+
 .slider-controls button.current::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 50%;
+  left: 50%;
 
   width: 4px;
   height: 4px;
 
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .services {
@@ -1374,6 +1381,34 @@ ul.type-sorting-list {
   opacity: 0.5;
 }
 
+.contacts-form input::-webkit-input-placeholder,
+.contacts-form textarea::-webkit-input-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.contacts-form input::-moz-placeholder,
+.contacts-form textarea::-moz-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.contacts-form input:-ms-input-placeholder,
+.contacts-form textarea:-ms-input-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.contacts-form input::-ms-input-placeholder,
+.contacts-form textarea::-ms-input-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
 .contacts-form input::placeholder,
 .contacts-form textarea::placeholder {
   color: #444444;
@@ -1393,6 +1428,26 @@ ul.type-sorting-list {
 
 .contacts-form input:focus::-webkit-input-placeholder,
 .contacts-form textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contacts-form input:focus:-ms-input-placeholder,
+.contacts-form textarea:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contacts-form input:focus::-ms-input-placeholder,
+.contacts-form textarea:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contacts-form input:focus::-webkit-input-placeholder,
+.contacts-form textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contacts-form input:focus::-moz-placeholder,
+.contacts-form textarea:focus::-moz-placeholder {
   opacity: 1;
 }
 
